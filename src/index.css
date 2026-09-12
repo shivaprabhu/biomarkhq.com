@@ -1,6 +1,21 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
+  --text: #625d69;
+  --text-h: #000;
   --bg: #fff;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -11,10 +26,11 @@
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: "Roboto", sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+  --roboto: "Roboto", sans-serif;
 
-  font: 18px/145% var(--sans);
+  font: 18px/145% var(--roboto);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -32,8 +48,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
+    --text-h: #000;
+    --bg: #fff;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
